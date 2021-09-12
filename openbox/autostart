@@ -1,0 +1,6 @@
+xrandr --output HDMI-0 --primary  --right-of DP-0
+#jackd -R -d alsa -d hw:1 -p 256 -r 48000 &
+polybar -r -c /home/$USER/.config/polybar/config top &
+setxkbmap us,th -option grp:win_space_toggle,grp_led:scroll
+feh --bg-max /home/$USER/Pictures/wallpaper.jpg
+picom &

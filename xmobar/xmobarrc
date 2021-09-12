@@ -1,0 +1,12 @@
+Config {
+		font =			"Iosevka:size=9:antialias=true"
+	,	bgColor =		"white"
+	, fgColor =		"black"
+	,	position =	Top
+	, border =		BottomB
+	, borderColor = "#FF0000"
+
+	, sepChar = "%"
+	, alignSep = "}{"
+	, template  = "%multicpu% | %coretemp% | %memory% || %date% | %kbd%"
+}

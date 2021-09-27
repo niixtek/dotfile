@@ -26,7 +26,7 @@ myKeys :: [(String, X ())]
 myKeys = 
 	[
 		-- Xmonad
-			("M-<ESC>", spawn "xmonad --recompile") -- Recompil
+			("M-<ESC>", spawn "xmonad --recompile") -- Recompile
 		, ("M-S-r", spawn "xmonad --restart") -- Restart
 		, ("M-A-<ESC>", io exitSuccess) -- Exit
 

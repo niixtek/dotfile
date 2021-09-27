@@ -1,12 +1,18 @@
 Config {
-		font =			"Iosevka:size=9:antialias=true"
-	,	bgColor =		"white"
-	, fgColor =		"black"
+		font =			"xft:Iosevka:size=7:antialias=true"
+	,	fgColor =		"#189CEA"
+	, bgColor =		"#000000"
 	,	position =	Top
 	, border =		BottomB
-	, borderColor = "#FF0000"
-
+	, borderColor = "#DD5099"
+	, commands = [
+									Run Cpu ["-t", "Cpu: <bar>%", "-L","3","-H","50", "--normal","green","--high","red"] 10
+								,	Run Memory ["-t", "Mem: <usedbar>%"] 10
+								, Run Volume "default" "Master" [] 10
+								,	Run Kbd [("us", "US"), ("th", "TH")]
+								, Run StdinReader
+							 ]
 	, sepChar = "%"
 	, alignSep = "}{"
-	, template  = "%multicpu% | %coretemp% | %memory% || %date% | %kbd%"
+	, template  = "%cpu% | %memory% } %kbd% { %default:Master% | %kbd% | %date% "
 }

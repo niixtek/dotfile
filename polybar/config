@@ -21,11 +21,11 @@ margin-bottom = 0
 margin-top = 0
 [colors]
 ;background = ${xrdb:color0:#222}
-background = #ff5F00E0
+background = #261447
 background-alt = #444
 ;foreground = ${xrdb:color7:#222}
-foreground = #FD87C2
-foreground-alt = #555
+foreground = #2DE2E6
+foreground-alt = #FF3864
 #primary = #2b90f5
 #secondary = #e60053
 alert = #bd2c40
@@ -54,7 +54,7 @@ line-color = #f00
 
 border-top-size = 0
 border-bottom-size = 2
-border-color =  #00b8ff
+border-color =  #64CFF7
 
 padding = 0
 padding-left = 2
@@ -63,15 +63,16 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 1
 
+font-1 = Laksaman:fontformat=truetype:size=12:antialias=true;3%
 font-0 = Iosevka Fixed Light:fontformat=truetype:size=12:antialias=true;3%
 #font-0 = 3270Medium Nerd Font Mono:fontformat=truetype:size=12:antialias=true;3
 #font-1 = Hermit:fontformat=truetype:size=12:antialias=true;2
 #font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 #font-2 = siji:pixelsize=10;1
 
-modules-left =   xwindow 
-modules-center = cpu memory
-modules-right =  xbacklight alsa xkeyboard wlan eth temperatre date powermenu 
+modules-left =  cpu memory 
+modules-center = mpd
+modules-right =  xbacklight alsa xkeyboard wlan eth temperatre date
 
 tray-position = right
 tray-padding = 2
@@ -236,16 +237,16 @@ interval = 2
 format = <bar-load>
 format-prefix = "CPU "
 format-prefix-foreground = ${colors.foreground-alt}
-#format-underline = #f90000
+;format-underline = #EB563A
 
 bar-load-width = 10
-bar-load-indicator = 🮐
-bar-load-indicator-foreground = #fff
+bar-load-indicator = 🮉
+;bar-load-indicator-foreground = #fff
 bar-load-indicator-font = 2
-bar-load-fill = 🮐
+bar-load-fill = 🮉
 bar-load-fill-font = 2
 bar-load-fill-foreground = #05d9e8
-bar-load-empty = 🮐
+bar-load-empty = 🮈
 bar-load-empty-font = 2
 bar-load-empty-foreground = ${colors.foreground-alt}
 
@@ -255,7 +256,7 @@ format = <bar-used>
 interval = 2
 format-prefix = "MEMORY "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
+;format-underline = #EB563A
 
 bar-used-width = 10
 bar-used-indicator = 
@@ -263,12 +264,12 @@ bar-used-indicator-foreground = #FFFFFF
 bar-used-indicator-font = 1
 bar-used-fill = 🮉
 bar-used-fill-font = 2
-bar-used-fill-foreground-1 = #ccc
-bar-used-fill-foreground-2 = #aaa
-bar-used-fill-foreground-3 = #ff2a6d
-bar-used-fill-foreground-4 = #ff2a6d
-bar-used-fill-foreground-5 = #ff2a6d
-bar-used-fill-foreground-6 = #ff2a6d
+;bar-used-fill-foreground-1 = #ccc
+;bar-used-fill-foreground-2 = #aaa
+;bar-used-fill-foreground-3 = #ff2a6d
+;bar-used-fill-foreground-4 = #ff2a6d
+;bar-used-fill-foreground-5 = #ff2a6d
+;bar-used-fill-foreground-6 = #ff2a6d
 bar-used-empty = 🮈
 bar-used-empty-font = 2
 bar-used-empty-foreground = ${colors.foreground-alt}
@@ -350,7 +351,7 @@ bar-volume-indicator = 🮐
 bar-volume-indicator-font = 2
 bar-volume-fill = 🮐
 bar-volume-fill-font = 2
-bar-volume-empty = 🮐
+bar-volume-empty = 🮈
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
 
@@ -361,20 +362,23 @@ format-volume = <label-volume> <bar-volume>
 label-volume = VOL
 label-volume-foreground = ${root.foreground}
 
+label-muted = VOL MULTED
+label-muted-foreground = #FF6C11
+
 bar-volume-width = 10
-bar-volume-foreground-0 =	#d9ffd8 
-bar-volume-foreground-1 = #d9ffd8
-bar-volume-foreground-2 = #c9aeff 
-bar-volume-foreground-3 = #c9aeff 
-bar-volume-foreground-4 = #c9aeff 
-bar-volume-foreground-5 = #fcc8ff
-bar-volume-foreground-6 = #fcc8ff
+;bar-volume-foreground-0 =	#d9ffd8 
+;bar-volume-foreground-1 = #d9ffd8
+;bar-volume-foreground-2 = #c9aeff 
+;bar-volume-foreground-3 = #c9aeff 
+;bar-volume-foreground-4 = #c9aeff 
+;bar-volume-foreground-5 = #fcc8ff
+;bar-volume-foreground-6 = #fcc8ff
 bar-volume-gradient = false
 bar-volume-indicator = 🮉
 bar-volume-indicator-font = 2
 bar-volume-fill = 🮉
 bar-volume-fill-font = 2
-bar-volume-empty = 🮍
+bar-volume-empty = 🮈
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
 

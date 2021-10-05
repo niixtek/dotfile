@@ -54,7 +54,7 @@ line-color = #f00
 
 border-top-size = 0
 border-bottom-size = 2
-border-color =  #64CFF7
+border-color =  #FF6C11
 
 padding = 0
 padding-left = 2
@@ -72,11 +72,11 @@ font-0 = Iosevka Fixed Light:fontformat=truetype:size=12:antialias=true;3%
 
 modules-left =  cpu memory 
 modules-center = mpd
-modules-right =  xbacklight alsa xkeyboard wlan eth temperatre date
+modules-right =  xbacklight pulseaudio xkeyboard wlan eth temperatre date
 
 tray-position = right
 tray-padding = 2
-tray-background = #0063ff
+;tray-background = #0D0221
 
 wm-restack = bspwm
 ;wm-restack = i3
@@ -332,24 +332,24 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+label-volume = VOL
 label-volume-foreground = ${root.foreground}
 
-label-muted = 🔇 muted
-label-muted-foreground = #666
+label-muted = VOL MUTED
+label-muted-foreground = #FF6C11
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
+;bar-volume-foreground-0 = #55aa55
+;bar-volume-foreground-1 = #55aa55
+;bar-volume-foreground-2 = #55aa55
+;bar-volume-foreground-3 = #55aa55
+;bar-volume-foreground-4 = #55aa55
+;bar-volume-foreground-5 = #f5a70a
+;bar-volume-foreground-6 = #ff5555
 bar-volume-gradient = false
-bar-volume-indicator = 🮐
+bar-volume-indicator = 🮉
 bar-volume-indicator-font = 2
-bar-volume-fill = 🮐
+bar-volume-fill = 🮉
 bar-volume-fill-font = 2
 bar-volume-empty = 🮈
 bar-volume-empty-font = 2

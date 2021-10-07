@@ -23,7 +23,11 @@ bspc rule -a blueman-manager state=floating
 
 sxhkd &
 picom &
-#xrandr --output HDMI-0 --primary  --right-of DP-0
+if [[ $HOST == *"laptop"* ]]; then
+	xrandr --output HDMI-0  --primary --left-of LVDS-0
+else
+	xrandr --output HDMI-0 --primary  --right-of DP-0
+fi 
 setxkbmap us,th -option grp:win_space_toggle,grp_led:scroll
 polybar -r -c /home/$USER/.config/polybar/config top &
 feh --bg-max /home/$USER/Pictures/wallpaper.jpg

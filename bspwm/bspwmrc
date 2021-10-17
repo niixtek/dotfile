@@ -2,11 +2,11 @@
 
 #bspc monitor -d I II III IV V VI VII VIII IX X
 if [[ $HOST == *"laptop"* ]]; then
-	bspc monitor HDMI-0 -d I II III IV V
-	bspc monitor LVDS-0 -d VI VII VIII IX X
+        bspc monitor HDMI-0 -d I II III IV V
+        bspc monitor LVDS-0 -d VI VII VIII IX X
 else
-	bspc monitor HDMI-0 -d I II III IV V
-	bspc monitor DP-0 -d VI VII VIII IX X
+        bspc monitor HDMI-0 -d I II III IV V
+        bspc monitor DP-0 -d VI VII VIII IX X
 fi
 
 bspc config border_width        3
@@ -31,10 +31,10 @@ bspc rule -a blueman-manager state=floating
 sxhkd &
 picom &
 if [[ $HOST == *"laptop"* ]]; then
-	xrandr --output HDMI-0 --scale 1x1 --primary --left-of LVDS-0
+        xrandr --output HDMI-0 --scale 1x1 --primary --left-of LVDS-0
 else
-	xrandr --output HDMI-0 --primary  --right-of DP-0
-fi 
+        xrandr --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate-normal --left-of DP-0 --output  DP-0 --mode 1440x900 --pos 1080x0 --rotate-normal --output DVI-D-0  --off
+fi
 blueman-applet &
 setxkbmap us,th -option grp:win_space_toggle,grp_led:scroll
 polybar -r -c /home/$USER/.config/polybar/config top &

@@ -34,7 +34,7 @@ super + shift + F11
 	systemctl restart
 
 super + shift + F12
-	systemctl shutdown
+	systemctl poweroff
 # quit bspwm normally
 super + alt + Escape
 	bspc quit

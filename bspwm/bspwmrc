@@ -30,7 +30,8 @@ bspc rule -a blueman-manager state=floating
 sxhkd &
 picom &
 if [[ $(hostname) == *"laptop"* ]]; then
-	xrandr --output HDMI-0 --scale 1x1 --primary --left-of LVDS-0  --output LVDS-0 --dpi 141
+	#xrandr --output HDMI-0 --scale 1x1 --primary --left-of LVDS-0  --output LVDS-0 --dpi 141
+	xrandr --output HDMI-0 --scale 1x1 --primary --left-of LVDS-0  --output LVDS-0 --dpi 92
 else
 	xrandr --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --left-of DP-0 --output  DP-0 --mode 1440x900 --pos 1920x0 --rotate normal --output DVI-D-0  --off
 fi

@@ -2,46 +2,57 @@ font:
   size: 11
   # Normal (roman) font face
   normal:
-
-    family: 'Iosevka Term SS04'
-
+    family: 'Iosevka Term'
     # The `style` can be specified to pick a specific face.
     style: Bold
 
+  offset:
+    x: 0
+    y: 0
+
+  # Glyph offset determines the locations of the glyphs within their cells with
+  # the default being at the bottom. Increase the x offset to move the glyph to
+  # the right, increase the y offset to move the glyph upward.
+  glyph_offset:
+    x: 0
+    y: 0
+
 colors:
+  # Default colors
   primary:
-    background: '0x191724'
-    foreground: '0xe0def4'
+    background: '#061923'
+    foreground: '#e5c49e'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x191724'
-    cursor: '0x796268'
-  vi_mode_cursor:
-    text: '0x191724'
-    cursor: '0x796268'
-  line_indicator:
-    foreground: None
-    background: None
+    text: '#061822'
+    cursor: '#feaf3c'
+
   selection:
-    text: CellForeground
-    background: '0x2A2738'
+    text: '#ffe9d7'
+    background: '#265b75'
+
+  # Normal colors
   normal:
-    black:   '0x6e6a86'
-    red:     '0xeb6f92'
-    green:   '0x9ccfd8'
-    yellow:  '0xf6c177'
-    blue:    '0x31748f'
-    magenta: '0xc4a7e7'
-    cyan:    '0xebbcba'
-    white:   '0xe0def4'
+    black: '#1d485f'
+    red: '#db662d'
+    green: '#008eab'
+    yellow: '#feaf3c'
+    blue: '#255a62'
+    magenta: '#77dbf4'
+    cyan: '#5fb1c2'
+    white: '#e5c49e'
+
+  # Bright colors
   bright:
-    black:   '0x6e6a86'
-    red:     '0xeb6f92'
-    green:   '0x9ccfd8'
-    yellow:  '0xf6c177'
-    blue:    '0x31748f'
-    magenta: '0xc4a7e7'
-    cyan:    '0xebbcba'
-    white:   '0xe0def4'
+    black: '#545d65'
+    red: '#dd998a'
+    green: '#739da8'
+    yellow: '#fedaae'
+    blue: '#0bc7e3'
+    magenta: '#c6e8f1'
+    cyan: '#97b9c0'
+    white: '#ffe9d7'
 
 cursor: 
   style: Block

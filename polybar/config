@@ -72,7 +72,7 @@ font-0 = Iosevka Fixed Light:fontformat=truetype:size=12:antialias=true;3%
 
 modules-left =  cpu memory 
 modules-center = mpd
-modules-right =  xbacklight pulseaudio xkeyboard wlan eth temperatre date
+modules-right =  xbacklight alsa xkeyboard wlan eth temperatre date
 
 tray-position = right
 tray-padding = 2

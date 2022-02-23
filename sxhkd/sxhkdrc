@@ -6,7 +6,7 @@ super + shift + F1
 
 # terminal emulator
 super + Return
-	kitty
+	alacritty
 
 # program launcher
 #super + @space

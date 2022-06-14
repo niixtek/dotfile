@@ -1,0 +1,37 @@
+#-------------------------------------------------
+# xontribs
+#-------------------------------------------------
+
+_xontribs = [ 'prompt_vi_mode',
+							'fish_completer'
+]
+if _xontribs:
+	xontrib load @(_xontribs)
+
+#-------------------------------------------------
+# VARS
+#-------------------------------------------------
+
+$XONSH_HISTORY_BACKEND = 'json'
+
+$TERM = 'xterm-256color'
+
+$PROMPT = '{CYAN}[{cwd}]─{RED}[{gitstatus}{RED}]{BLUE} ❯❯❯{RESET} '
+
+$MULTILINE_PROMPT=' '
+
+$HISTCONTROL='ignoredups'
+
+$PATH.append('~/.local/bin')
+$PATH.append('~/.cargo/bin')
+
+#dont clear screen after manpage
+$MANPAGER = 'less -X'
+$LESS = "--ignore-case --quit-if-one-screen --quit-on-intr FRXQ"
+
+#-------------------------------------------------
+# Alias
+#-------------------------------------------------
+aliases['md'] = 'mkdir -p $arg0 && cd $arg0'
+
+aliases['cls'] = 'clear'

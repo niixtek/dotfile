@@ -34,25 +34,25 @@ colors:
 
   # Normal colors
   normal:
-    black: '#1d485f'
-    red: '#db662d'
-    green: '#008eab'
-    yellow: '#feaf3c'
-    blue: '#255a62'
-    magenta: '#77dbf4'
-    cyan: '#5fb1c2'
-    white: '#e5c49e'
+    black: '#283034'
+    red: '#ff2e97'
+    green: '#62a9cf'
+    yellow: '#ffd400'
+    blue: '#42c6ff'
+    magenta: '#ff2afc'
+    cyan: '#42c6ff'
+    white: '#d9e0e9'
 
   # Bright colors
   bright:
-    black: '#545d65'
-    red: '#dd998a'
-    green: '#739da8'
-    yellow: '#fedaae'
-    blue: '#0bc7e3'
-    magenta: '#c6e8f1'
-    cyan: '#97b9c0'
-    white: '#ffe9d7'
+    black: '#435056'
+    red: '#ff2e97'
+    green: '#add0e5'
+    yellow: '#ffd400'
+    blue: '#42c6ff'
+    magenta: '#ff2afc'
+    cyan: '#42c6ff'
+    white: '#f4f6f9'
 
 cursor: 
   style: Block

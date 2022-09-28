@@ -67,5 +67,8 @@ bell:
   color: '0xffffff'
   duration: 0
 
+key_bindings:
+    - { key: Space, mods: Control, chars: "\x00" }
+
 shell:
   #  progran: 
